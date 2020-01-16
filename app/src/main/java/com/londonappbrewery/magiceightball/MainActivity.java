@@ -1,12 +1,12 @@
 package com.londonappbrewery.magiceightball;
 
-        import android.support.v7.app.AppCompatActivity;
-        import android.os.Bundle;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.ImageView;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 
-        import java.util.Random;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     ImageView ballDisplay;
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         ballDisplay = findViewById(R.id.main_eightBall_imageView);
         myButton = findViewById(R.id.main_ask_button);
 
-        final int[] ballArray = {
+        final int[] ballArray = new int[]{
                 R.drawable.ball1,
                 R.drawable.ball2,
                 R.drawable.ball3,
